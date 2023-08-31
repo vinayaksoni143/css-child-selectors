@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    --box-color:#2ed17a;
+}
+
+body{
+    background-color: black;
+    color: #d6d6d6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block{
+    display: grid;
+    grid : auto / 50% 50%;
+    border-radius: 5px;
+    width: 25%;
+    padding: 5px 20px;
+    
+}
+
+.boxes{
+    display: grid;
+    grid: 1fr/auto auto auto auto auto auto;
+    align-items: center;
+}
+
+
+.block:hover{
+    background-color: rgba(66, 65, 65, 0.3);
+}
+
+.box{
+    height: 20px;
+    width: 20px;
+    background-color: rgba(86, 81, 94, 0.4);
+    border-radius: 3px;
+}
+
+
+#one:hover .box:first-child{
+    background-color: var(--box-color)
+}
+
+#two:hover .box:last-child{
+    background-color: var(--box-color)
+}
+
+#three:hover .box:nth-child(2){
+    background-color: var(--box-color)
+}
+
+#four:hover .box:nth-last-child(2){
+    background-color: var(--box-color)
+}
+
+#five:hover .box:nth-child(odd){
+    background-color: var(--box-color)
+}
+
+#six:hover .box:nth-child(even){
+    background-color: var(--box-color)
+}
+
+#seven:hover .box:nth-child(3n){
+    background-color: var(--box-color)
+}
+
+#eight:hover .box:nth-child(n+3){
+    background-color: var(--box-color)
+}
+
+
+
+
+
+
